@@ -37,6 +37,9 @@ https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
 
 - **Clay Stop-Motion（黏土定格寓言）**——把道德命题变成由角色选择、后果与改变驱动的手工微缩寓言故事。
 - **Cinematic Drama（剧情影像）**——把已确认的世界观、人物和剧本制作成由行动、对白与冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。
+
+https://github.com/user-attachments/assets/8d7ca59b-3d13-488c-bb26-c77b75e90406
+
 - **Visual Journalism（视觉新闻）**——围绕时事、财经、产业等现实议题，以证据驱动叙事，结合纪录片实拍、解释性动画、地图、图表和动态图形。
 
 ## 它能帮你做什么
