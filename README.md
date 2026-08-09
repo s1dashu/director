@@ -28,7 +28,13 @@
 `director` is an Agent skill for directing and producing complete videos, from the initial idea and script to shot design, media generation, and delivery.
 
 - **Animated Explainer** — Explain concepts, ideas, history, or knowledge through clear narration and animated scenes.
+
+https://github.com/user-attachments/assets/60e7e51f-8d3e-4004-a88d-f80f6f209d4d
+
 - **Storytime Animation** — Turn first-person experiences into animated stories that combine direct-to-camera narration with reenacted moments.
+
+https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
+
 - **Clay Stop-Motion** — Turn a moral premise into a handcrafted miniature fable driven by character choices, consequences, and change.
 - **Cinematic Drama** — Turn confirmed worldbuilding, characters, and scripts into action-, dialogue-, and conflict-driven AI films, AI motion comics, short dramas, or micro-films.
 - **Visual Journalism** — Cover current affairs, business, industry, and other real-world topics through evidence-led storytelling that combines documentary footage, explanatory animation, maps, charts, and motion graphics.
