@@ -168,7 +168,7 @@ Skill 会引导你完成必要选择，你不需要提前了解 Seedance Prompt�
 
 ## 工具与适用范围
 
-当前正式维护并经过实际制作验证的媒体执行路径是 [LibTV CLI](https://libtv.ai/)。这套关于讲稿结构、视觉一致性、人物参考、多镜头导演和音色管理的方法并不依赖单一平台；在查阅目标平台的最新官方文档后，也可以适配 Higgsfield、即梦及其他支持多模态生成的 CLI。
+`director` 当前支持三条媒体执行 CLI 路径：[LibTV CLI](./tools/libtv-cli.md)、[Higgsfield CLI](./tools/higgsfield-cli.md)和[即梦 CLI](./tools/jimeng-cli.md)。三者都有正式维护的工具适配文档，可用于各自平台的模型查询、素材管理、生成任务、状态跟踪与结果下载。LibTV CLI 是目前实际制作验证最充分、支持程度最好的路径，因此在用户没有指定平台时仍优先推荐；Higgsfield CLI 和即梦 CLI 也是当前已支持路径，而不是未来才可能适配的选项。
 
 目前的工作流主要针对由多个 15 秒片段组成的 1–5 分钟视频。Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p，不主动尝试 Seedance 2.5 Pro 或升级 1080p。
 

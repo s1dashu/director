@@ -168,7 +168,7 @@ The Skill will guide you through the necessary choices. You do not need to under
 
 ## Tools and Scope
 
-The officially maintained and production-tested media execution path currently uses [LibTV CLI](https://libtv.ai/). The underlying methods for narration structure, visual consistency, character references, multi-shot direction, and voice management are not tied to a single platform. After reviewing the latest official documentation for the target platform, they can also be adapted to Higgsfield, Jimeng, and other multimodal generation CLIs.
+`director` currently supports three media-execution CLI paths: [LibTV CLI](./tools/libtv-cli.md), [Higgsfield CLI](./tools/higgsfield-cli.md), and [Jimeng CLI](./tools/jimeng-cli.md). Each has a maintained tool adapter covering its platform's model discovery, asset management, generation tasks, status tracking, and result downloads. LibTV CLI remains the best-supported and most thoroughly production-tested path, so it is still the preferred recommendation when the user has not chosen a platform; Higgsfield CLI and Jimeng CLI are current supported paths, not merely future adaptations.
 
 The current workflow is designed primarily for 1–5 minute videos assembled from multiple 15-second clips. Formal Cinematic Drama clips are locked to Seedance 2.0 Pro at 720p; the workflow does not proactively test Seedance 2.5 Pro or upgrade to 1080p.
 
