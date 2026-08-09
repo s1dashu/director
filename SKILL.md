@@ -1,6 +1,6 @@
 ---
 name: director
-description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer 与开发中的 Visual Journalism，以及为未来微电影、短片、短剧、音乐视频等独立 Mode 建立制作方法。Storytime 与 Explainer 已完成实际作品验证，Visual Journalism 尚在实作验证中；尚未建立专属 Mode 的类型不得冒充已支持流程。
+description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer、Clay Stop-Motion、Cinematic Drama 与 Visual Journalism。Clay Stop-Motion 用手工黏土偶、微缩布景和逐格表演创作寓言与教育性故事；Storytime 与 Explainer 已完成实际作品验证，Clay Stop-Motion、Cinematic Drama 与 Visual Journalism 尚在实作验证中。尚未建立专属 Mode 的类型不得冒充已支持流程。
 ---
 
 # director
@@ -23,12 +23,14 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 
 - **[Storytime Animation](modes/storytime-animation/workflow.md)**（`storytime-animation`）：由第一人称讲述者与个人经历驱动，用动画重现自己、身边人或明确改编的故事。已完成首支五片段作品的生成与质量验证。
 - **[Animated Explainer](modes/animated-explainer/workflow.md)**（`animated-explainer`）：使用旁白和动画，在一支短片中讲清楚一个概念、理论、人物思想、历史事件或知识主题。这就是重构前已经完成多期实作验证的原有工作流。
+- **[Clay Stop-Motion](modes/clay-stop-motion/workflow.md)**（`clay-stop-motion`，黏土定格寓言）：用手工黏土偶、微缩布景和逐格表演，把道德命题转化为由角色选择、后果与改变驱动的寓言、品格教育故事或启发性短篇。已建立候选工作流，待首支端到端样片验证。
+- **[Cinematic Drama](modes/cinematic-drama/workflow.md)**（`cinematic-drama`，剧情影像）：把已确认的世界观、人物设定、剧本和指定情节制作成由人物行动、对白与戏剧冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。已建立候选工作流，待首支端到端样片验证。
 - **[Visual Journalism](modes/visual-journalism/workflow.md)**（`visual-journalism`）：研究并解释财经、时政、产业或其他现实议题，以证据、现实素材和论点驱动叙事，混合纪录片实拍、档案材料、地图、解释性动画与动态图表。当前已建立首轮候选工作流，尚未完成端到端实作验证。
 选定 Mode 后，在任何采集、研究、写作、分镜或素材规划之前完整读取对应 `workflow.md` 及其指定的专属文档。不把 Animated Explainer 的旁白结构、字数、分镜、封面或纯动画切片流程默认套用到其他 Mode。
 
 ## 当前能力与扩展边界
 
-当前只有上方列出的三个 Mode 属于已进入实现的制作能力，其中 Storytime Animation 与 Animated Explainer 已完成作品验证，Visual Journalism 仍是候选工作流。微电影、短片、短剧、音乐视频及其他类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为可用或已验证。
+当前只有上方列出的五个 Mode 属于已进入实现的制作能力，其中 Storytime Animation 与 Animated Explainer 已完成作品验证，Clay Stop-Motion、Cinematic Drama 与 Visual Journalism 仍是待样片验证的候选工作流。音乐视频及其他尚未建立 Mode 的类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为已验证。
 
 用户要求尚未建立专属 Mode 的视频类型时，明确说明当前缺少该类型的专属工作流；可以与用户共同定义目标、输入、叙事结构、素材策略、质量门槛和验证作品，但不得静默套用 Animated Explainer 或 Storytime Animation。新增 Mode 应放入 `modes/<mode>/`，把类型专属流程、style 和 Prompt 方法留在该 Mode 内；只有真正跨类型复用的能力才提升到 `references/`。
 
@@ -50,10 +52,22 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 - [柔和彩铅萌趣动画](modes/animated-explainer/styles/soft-colored-pencil-cute-animation.md)
 - [清爽线描蜡笔动画](modes/animated-explainer/styles/clean-line-crayon-animation.md)
 - [多巴胺萌趣 3D 动画](modes/animated-explainer/styles/dopamine-cute-3d-animation.md)
+- [Neo-naive Doodle 新朴拙涂鸦动画](modes/animated-explainer/styles/neo-naive-doodle-animation.md)（候选，待样片验证）
+- [朴拙绘画感抒情动画](modes/animated-explainer/styles/painterly-naive-lyrical-animation.md)（候选，待样片验证）
+
+**Clay Stop-Motion**
+
+- [黏土微缩定格寓言](modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md)（候选，待样片验证）
 
 **Visual Journalism**
 
 - [现代编辑部 Visual Journalism](modes/visual-journalism/styles/modern-editorial-visual-journalism.md)（首轮候选，待样片验证）
+- [国际主义编辑设计](modes/visual-journalism/styles/internationalist-editorial-design.md)（候选，待样片验证）
+
+**Cinematic Drama**
+
+- [半写实 3D 国产动画电影](modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)（候选，待样片验证）
+- [半写实东方奇幻暗黑 3D 电影](modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)（候选，待样片验证）
 
 用户未指定 style 时，只展示当前 Mode 的内置或候选选项并等待选择，不设置静默默认值；自定义文字 style 与该 Mode 的内置 style 具有同等优先级。style 只定义跨作品稳定的媒介、材质、线条、造型、色彩和运动语言，不是固定 Prompt、场景或镜头模板。候选 style 必须明确验证状态，样片经用户确认后才可标记为已验证。
 
@@ -67,7 +81,7 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 - [Seedance 2.0 官方提示词指南](references/official-seedance-2.0-prompt-guide.md)：使用 Seedance 时读取。
 - [Seedance 社区导演与连续性笔记](references/community-directing-notes.md)：处理循环动作、重复运镜或切镜僵硬时补充读取。
 
-当 Mode 需要人物参考时，只为必须稳定识别的人物生成参考图，不为一次性群演生成。人物参考只承担身份、相貌、比例、服装与材质职责。对当前已实现的动画 Mode，不生成或连接统一场景图、画风参考图或风格参考图；场景与画风由所选 style 和每个片段的具体文字 Prompt 直接定义。
+当 Mode 需要人物参考时，只为必须稳定识别的人物生成参考图，不为一次性群演生成。人物参考承担身份、相貌、比例、服装与材质职责。Animated Explainer 与 Storytime Animation 不生成或连接统一场景图、画风参考图或风格参考图；Clay Stop-Motion 可按专属流程为反复出现且影响行动的微缩布景与跨片段变化的关键道具建立最少而充分的参考；Cinematic Drama 将人物分为主角、配角和路人，主角与跨片段配角必须有人物和音色参考，路人不固定。三视图按角色重要性与制作速度选择：主角默认建议制作，重要配角按需制作，次要配角可使用单张参考。style 始终使用纯文字规则锁定，不使用抽象的统一画风参考图替代 style。
 
 内置音色的唯一正式媒体源为顶级目录 `voices/`，权威清单为[内置音色库](references/reference-asset-library.md)。宿主项目可以额外登记私有人物与音色，但不得扫描历史作品冒充正式资产库。`repository-assets/` 只保存 README 封面、效果示例和 style 预览等仓库展示素材，不属于 skill 执行资产，也不得被工作流当作生成输入。
 
@@ -90,12 +104,15 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 
 ## 全 Mode 共享的片段规则
 
-- Animated Explainer 和 Storytime Animation 使用 15 秒中文口播片段时，默认约 60 个汉字；英文 Storytime 默认目标 30 个实际朗读单词，通常保持 28–32 个且超过 32 个必须先缩短确认，Animated Explainer 以约 32 个英文单词作为可调整目标。两者都以语义自然完整、实际能够说完为先。Visual Journalism 不继承固定字数目标，按证据密度、图表阅读时间和目标音色实测。
+- 同一支作品中，相同时长片段的旁白长度应尽可能接近。模型可能按文本量动态改变语速；如果相邻片段文字量差异过大，即使视频时长相同，也会造成一段明显赶读、下一段突然放慢的节奏波动。需要容纳更多信息时，优先改稿或重新拆分片段，不依赖模型大幅加速朗读。
+- 使用 15 秒口播片段时，在语义自然、证据完整和画面有足够阅读时间的前提下，尽量向约 60 个中文汉字或 30 个实际朗读英文单词靠拢，并让全片各段落在相近范围内。Animated Explainer 中文旁白仍优先落在 59–61 个汉字，只有为了语义自然完整时才放宽到 58–62 个汉字；英文 Storytime 通常保持 28–32 个单词且超过 32 个必须先缩短确认，Animated Explainer 以约 32 个英文单词作为可调整目标。Visual Journalism 不把目标字数当作硬性事实裁切线；证据密度、限定语和图表阅读时间需要偏离时，保留必要内容并重新平衡其他片段。
+- Clay Stop-Motion 为逐格角色表演、实体道具接触、材料反馈和结尾停顿预留更多时间；首轮候选范围以其专属写作指南为准，不把 Animated Explainer 的字数与五镜节奏直接套用过去。
 - 任何 Mode 编写多镜头视频 Prompt 时，相邻镜头默认直接硬切，不写擦除、形变、融化或其他装饰性转场。只有连续性本身是创作重点的特殊长镜头，尤其长时间动作、追逐或打斗编排，才设计不中断的连续调度。
+- Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p；不主动试用 Seedance 2.5 Pro，不主动升级 1080p。常见快节奏片段以 5 镜为起点，需要长表演、复杂动作或情绪停顿时使用 4 镜或 3 镜。
 
 ## 旁白驱动动画的共享生产流程
 
-以下流程当前适用于 Animated Explainer 和 Storytime Animation；各 Mode 的采集、研究、结构、写作、视觉职责和质量门槛以对应 Mode 文件为准。
+以下流程当前适用于 Animated Explainer 和 Storytime Animation；Clay Stop-Motion 采用自己的故事稿、代表性片段、布景与关键道具连续性流程。各 Mode 的采集、研究、结构、写作、视觉职责和质量门槛以对应 Mode 文件为准。
 
 1. **按 Mode 完成讲稿。** 完整执行对应 Mode 的前期与写作流程，并遵循上方共享片段规则。将讲稿和拆分结果交给用户审阅；确认后立即保存为作品文档目录中的独立 `旁白.md`。
 2. **规划必要人物参考。** 完整读取人物指南，允许 Animated Explainer 没有关键人物；Storytime Animation 的讲述者默认是关键人物。按实际需要生成、确认并记录人物映射。
@@ -103,7 +120,7 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 4. **选择音色路线并只生成片段 1。** 正式生成前，读取内置音色库，明确询问用户使用已有音色还是通过片段 1 新建音色。已有音色从片段 1 起连接；新建音色的片段 1 不连接音频参考。两条路线都只先生成片段 1，交给用户确认。
 5. **锁定统一音色锚点。** 已有音色路线继续复用同一份标准化音频；新建音色路线按音色指南从已确认片段 1 建立独立音频素材。
 6. **并行生成后续片段。** 从片段 2 开始全部使用已锁定的同一音色锚点；当前片段的准确旁白仍只由当前 Prompt 决定。
-7. **确认返回并交付剪辑。** 使用选定工具文档完成任务跟踪与下载。默认只确认成功终态、可追溯 ID 和资源完整性，不播放、不抽帧、不听写；用户明确要求或返回异常时才做针对性内容检查。全部片段生成后，提示用户在剪辑工具中手动拼接并轻量修剪局部废帧、片尾画面或声音毛刺。只有用户明确要求时，才由 Agent 执行自动拼接。
+7. **确认返回并交付剪辑。** 使用选定工具文档完成任务跟踪。每个视频任务只要返回成功终态和可用资源 URL，就必须立即下载到当前作品的 `video/` 目录，不得只报告节点或任务 ID。下载后向用户返回可访问的本地文件路径；宿主支持媒体渲染时，在最终回复中直接展示可播放视频。默认只确认成功终态、可追溯 ID、资源完整性和下载成功，不主动抽帧或听写；用户明确要求或返回异常时才做针对性内容检查。任务失败或平台未返回资源 URL 时，明确说明不存在可下载文件，不伪造交付。全部片段生成后，提示用户在剪辑工具中手动拼接并轻量修剪局部废帧、片尾画面或声音毛刺。只有用户明确要求时，才由 Agent 执行自动拼接。
 
 需要封面时读取当前 Mode 的封面指南。目前只有 [Animated Explainer 封面指南](modes/animated-explainer/video-cover-image-guide.md) 已建立专属流程；不将它默认套用到其他 Mode。
 
@@ -114,9 +131,13 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 | 选择 Mode，或开始采集、研究、写作、分镜与制作 | 当前选定的 [Mode 文件](#mode-选择与路由) |
 | 编写、改写或拆分 Animated Explainer 旁白 | [Animated Explainer 流程](modes/animated-explainer/workflow.md)和[旁白讲稿写作指南](modes/animated-explainer/narration-script-guide.md) |
 | 采集、改编或编写第一人称故事 | [Storytime Animation 流程](modes/storytime-animation/workflow.md) |
+| 构思、改编、写作或拆分黏土定格寓言 | [Clay Stop-Motion 流程](modes/clay-stop-motion/workflow.md)和[寓言故事与声音写作指南](modes/clay-stop-motion/story-and-narration-guide.md) |
+| 编写、改写或排查 Clay Stop-Motion 视频 Prompt | [Clay Stop-Motion 流程](modes/clay-stop-motion/workflow.md)、[专属视频 Prompt 指南](modes/clay-stop-motion/video-prompt-guide.md)、当前 style、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
 | 研究现实议题，或编写 Visual Journalism 旁白与素材结构 | [Visual Journalism 流程](modes/visual-journalism/workflow.md)和[研究与证据指南](modes/visual-journalism/research-and-evidence-guide.md) |
+| 制作 AI 电影、AI 漫剧、短剧或微电影 | [Cinematic Drama 流程](modes/cinematic-drama/workflow.md)、[视觉与声音参考资产指南](modes/cinematic-drama/reference-development-guide.md)和当前 style |
+| 编写、改写或排查 Cinematic Drama 视频 Prompt | [Cinematic Drama 流程](modes/cinematic-drama/workflow.md)、[专属视频 Prompt 指南](modes/cinematic-drama/video-prompt-guide.md)、当前 style、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
 | 编写、改写或排查 Visual Journalism 视频 Prompt | [Visual Journalism 流程](modes/visual-journalism/workflow.md)、[专属视频 Prompt 指南](modes/visual-journalism/video-prompt-guide.md)、所选 style、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
-| 规划或生成人物参考 | [人物参考图指南](references/character-reference-image-guide.md)、当前 Mode 和所选 style；Storytime 另读[人物形象库](modes/storytime-animation/characters/character-library.md) |
+| 规划或生成人物参考 | [人物参考图指南](references/character-reference-image-guide.md)、当前 Mode 和所选 style；Storytime 另读[人物形象库](modes/storytime-animation/characters/character-library.md)，Cinematic Drama 另读[视觉与声音参考资产指南](modes/cinematic-drama/reference-development-guide.md) |
 | 编写、改写或排查视频生成 Prompt | 当前 Mode、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
 | 选择、建立、转换或更换音色 | [内置音色库](references/reference-asset-library.md)和[音色参考与音频转换指南](references/voice-reference-guide.md) |
 | 生成、比较、修改或质检 Animated Explainer 封面 | [Animated Explainer 封面指南](modes/animated-explainer/video-cover-image-guide.md) |
@@ -131,6 +152,8 @@ Seedance 官方指南较长，定向排查时优先搜索：`基础公式`、`�
 - 当前 Mode 尚未选定，或未完整读取对应工作流。
 - 用户要求的 Mode 尚未建立必要执行能力，但仍试图用另一 Mode 的流程伪装完成。
 - 任一必须稳定识别的人物缺少已确认人物参考，或参考素材职责、编号与实际连接顺序不一致。
+- Clay Stop-Motion 的道德命题无法由角色选择与可见后果成立，代表性片段尚未确认，或角色、重复布景与关键道具的状态记录互相冲突。
+- Cinematic Drama 中任一主角或跨片段配角缺少人物参考或独立音色，计划要求的三视图未完成，换装卡未使用已确认人物参考走图生图，连续性关键场景缺少参考图，反复出现或承担关键动作的武魂／召唤物／生物／关键道具缺少参考图，当前片段遗漏实际出现的连续性资产，或正式节点不是 Seedance 2.0 Pro、720p。
 - 当前 Mode 需要统一音色，但片段 1 的音色尚未确认，或后续片段没有实际使用已锁定音色锚点。
 - 选定 CLI 缺少登录、最新能力信息、必要模型能力或可追溯任务信息。
 - 任一媒体任务未返回成功终态，或任务 ID、节点／项目 ID、资源 URL 等目标平台应提供的关键追踪信息缺失。
