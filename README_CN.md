@@ -20,7 +20,6 @@
 
 <p align="center">
   <a href="#它能帮你做什么">核心能力</a> ·
-  <a href="#视频效果参考">效果参考</a> ·
   <a href="#内置视觉风格">视觉风格</a> ·
   <a href="#安装">安装</a> ·
   <a href="#从一句话开始创作">开始创作</a>
@@ -30,6 +29,8 @@
 
 - **Animated Explainer（动画解说）**——通过清晰的旁白和动画场景，解释概念、思想、历史事件或知识主题。
 - **Storytime Animation（故事动画）**——把第一人称经历制作成动画故事，结合面向观众的讲述与事件重现。
+- **Clay Stop-Motion（黏土定格寓言）**——把道德命题变成由角色选择、后果与改变驱动的手工微缩寓言故事。
+- **Cinematic Drama（剧情影像）**——把已确认的世界观、人物和剧本制作成由行动、对白与冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。
 - **Visual Journalism（视觉新闻）**——围绕时事、财经、产业等现实议题，以证据驱动叙事，结合纪录片实拍、解释性动画、地图、图表和动态图形。
 
 ## 它能帮你做什么
@@ -40,26 +41,9 @@
 - **让整支视频保持统一。** 通过文字 style、必要的人物参考与音色锚点，减少跨片段的人物漂移、画风跳变和声音不一致。
 - **从创意一路走到可剪辑片段。** 不止交付文案，还能继续完成参考素材规划、片段生成和任务追踪，再把全部素材交给剪辑工具完成最终拼接与轻量修整。
 
-## 视频效果参考
-
-<table>
-  <tr>
-    <td width="50%">
-      <img src="./repository-assets/examples/video-effect-01.webp" alt="动画哲学解说视频画面" width="100%">
-    </td>
-    <td width="50%">
-      <img src="./repository-assets/examples/video-effect-02.webp" alt="动画心理解说视频画面" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><sub><b>哲学科普</b>——让思想进入人物与故事</sub></td>
-    <td align="center"><sub><b>心理科普</b>——用具体事件解释抽象概念</sub></td>
-  </tr>
-</table>
-
 ## 内置视觉风格
 
-Skill 当前内置六套已经 Animated Explainer 验证的视觉语言，以及一套 Storytime Animation 专属风格。每个 Mode 管理自己已验证的 style，不向用户暴露未验证组合；只有 style 在多个 Mode 的真实作品中验证成功后，才提升为跨 Mode 共享。
+Skill 按 Mode 管理已验证与候选的视觉语言：Animated Explainer 目前有六套已验证 style 和两套手绘候选 style，Storytime Animation 有一套专属 style，Clay Stop-Motion 有一套手工微缩候选 style，Cinematic Drama 有两套候选 style。不向用户暴露未验证的跨 Mode 组合；只有 style 在多个 Mode 的真实作品中验证成功后，才提升为跨 Mode 共享。
 
 这些风格是创作起点，不是套模板。Skill 会围绕每一期的内容重新设计场景、人物与镜头；你也可以为当前 Mode 提供自己的文字风格说明。视觉 style 不依赖图片参考资产。
 
@@ -75,7 +59,7 @@ Skill 当前内置六套已经 Animated Explainer 验证的视觉语言，以及
       <a href="./repository-assets/style-previews/clay-stop-motion.webp"><img src="./repository-assets/style-previews/clay-stop-motion.webp" alt="黏土定格动画效果图" height="220"></a><br>
       <b>黏土定格动画</b><br>
       <sub>手工黏土偶、微缩布景与真实可触的逐帧质感</sub><br>
-      <a href="./modes/animated-explainer/styles/clay-stop-motion.md">查看风格详情</a>
+      <a href="./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md">查看风格详情</a>
     </td>
   </tr>
   <tr>
@@ -110,17 +94,27 @@ Skill 当前内置六套已经 Animated Explainer 验证的视觉语言，以及
 
 Storytime Animation 拥有自己的[清爽白色圆身 Storytime 动画](./modes/storytime-animation/styles/clean-white-character-storytime-animation.md)：白色圆身二维人物、利落黑色粗线、有限平涂色块、清楚的喜剧表演，以及比人物更具体的环境。
 
+Clay Stop-Motion 不再把黏土定格只当作表面画风，而是使用独立故事流程。候选[黏土微缩定格寓言](./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md) style 结合手工角色偶、符合材料的形变、微缩布景摄影与可读的逐格关键姿态，仍待首支完整样片验证。
+
+Cinematic Drama 首轮提供[半写实 3D 国产动画电影](./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)和[半写实东方奇幻暗黑 3D 电影](./modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)两套候选 style，均需经首支样片验证后才能标记为已验证。
+
 ## 不只是画风，还有可复用的声音
 
-除了七套由文字 Prompt 定义的视觉风格，Skill 还随包提供多种标准化中文与英文音色。
+除了按 Mode 管理的文字 style，Skill 还随包提供多种标准化中文与英文音色。
 
 你可以直接选用现成音色，也可以从第一个片段开始创造本期专属声音。Skill 会先与你确认选择，不会擅自替你决定风格或音色。
 
+Cinematic Drama 会在正式视频前为每个说话角色分别选择或生成音色参考，而不是全片只锁定一个旁白音色。
+
 完整音色清单见[内置音色库](./references/reference-asset-library.md)。
 
-## 已完成生产验证的工作流
+## 工作流状态
 
 Storytime Animation 增加第一人称故事采集、Storytime 专属[人物形象库](./modes/storytime-animation/characters/character-library.md)、对话式人物共创、讲述者表演，以及面向观众讲述与事件重现之间的灵活切换。Animated Explainer 则保留引入 Mode 架构前已经验证的原有工作流。
+
+Clay Stop-Motion 已建立完整候选流程：从道德命题开发寓言，规划角色偶、重复布景和关键道具参考，写作给逐格表演留出空间的旁白，再以关键姿态、实体接触、材料反馈、摄影机路径和镜头终点编写 Seedance Prompt。该 Mode 尚待首支端到端样片验证。
+
+Cinematic Drama 已建立完整候选流程：默认从已确认的世界观、人物和剧本出发，先为主角与跨片段配角建立人物参考和逐角色音色，为主角及重要配角按需补充 16:9 无文字多视图人物卡，并建立关键场景参考，再编写和生成 15 秒剧情片段。路人不固定人物或声音。该 Mode 尚待首支端到端样片验证。
 
 1. **确定讲什么。** 围绕主题、受众和时长研究资料，完成一篇结构清楚的旁白讲稿。
 2. **确定长什么样。** 选择由文字 Prompt 定义的内置或自定义风格，并只为必须稳定辨认的人物建立参考图。
@@ -129,6 +123,10 @@ Storytime Animation 增加第一人称故事采集、Storytime 专属[人物形�
 5. **在剪辑工具中收尾。** 下载全部生成片段后，由用户手动排序和拼接，轻量修剪边缘废帧、片尾极短声音毛刺，并检查节奏与切点。只有用户明确要求时才自动拼接。
 
 目前经过实际验证的创作节奏是：将 1–5 分钟视频拆成 15 秒片段。Animated Explainer 通常以约 60 个汉字或约 32 个英文单词、约 5 镜为起点；英文 Storytime 以 30 个实际朗读单词为目标，通常保持 28–32 词，并使用 3–5 镜，约 4 镜是当前稳定起点。
+
+Cinematic Drama 的候选节奏是每个 15 秒片段通常使用 5 镜，需要长表演、复杂动作或情绪停顿时使用 4 镜或 3 镜。正式片段固定使用 Seedance 2.0 Pro、720p；不主动尝试 Seedance 2.5 Pro 或升级 1080p。
+
+Clay Stop-Motion 首轮样片从每个 15 秒片段 3–5 镜、通常约 4 镜开始测试，并为逐格关键姿态、道具接触、材料反馈和停顿预留更多空间。旁白密度仍是候选范围，需经完整作品验证后才能固化。
 
 ## 安装
 
@@ -158,13 +156,21 @@ Storytime Animation 增加第一人称故事采集、Storytime 专属[人物形�
 
 > 使用 `director` skill 把“为什么人会拖延”做成一支 90 秒心理科普动画。希望语气温柔，使用手绘风格，先和我确认讲稿与视觉方案。
 
+要直接开发一则黏土定格寓言，也可以这样开始：
+
+> 使用 `director` 的 Clay Stop-Motion Mode，创作一支 90 秒寓言：一只总爱走捷径的小狐狸。先确认道德命题和故事大纲，再设计黏土角色偶、微缩布景与 Seedance Prompt。
+
+已有世界观和剧本时，也可以直接进入剧情生产：
+
+> 使用 `director` 的 Cinematic Drama Mode，把我已经定稿的这场对决制作成 AI 漫剧。先建立人物卡、角色音色和场景参考，再给我逐片段 Prompt。
+
 Skill 会引导你完成必要选择，你不需要提前了解 Seedance Prompt、音色锚点或多模态素材连接方式。
 
 ## 工具与适用范围
 
 当前正式维护并经过实际制作验证的媒体执行路径是 [LibTV CLI](https://libtv.ai/)。这套关于讲稿结构、视觉一致性、人物参考、多镜头导演和音色管理的方法并不依赖单一平台；在查阅目标平台的最新官方文档后，也可以适配 Higgsfield、即梦及其他支持多模态生成的 CLI。
 
-目前的工作流主要针对由多个 15 秒片段组成的 1–5 分钟视频。Seedance 2.5 Pro 的 30 秒片段尚未完成系统性验证，因此没有被宣传为当前版本的默认能力。
+目前的工作流主要针对由多个 15 秒片段组成的 1–5 分钟视频。Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p，不主动尝试 Seedance 2.5 Pro 或升级 1080p。
 
 想了解完整执行规则，可以阅读 [SKILL.md](./SKILL.md)。旁白、视频 Prompt、音色参考与封面制作方法分别收录在 [`references/`](./references/) 中。
 

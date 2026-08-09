@@ -20,7 +20,6 @@
 
 <p align="center">
   <a href="#what-it-can-do-for-you">Core Capabilities</a> ·
-  <a href="#video-examples">Examples</a> ·
   <a href="#built-in-visual-styles">Visual Styles</a> ·
   <a href="#installation">Installation</a> ·
   <a href="#start-with-a-single-sentence">Get Started</a>
@@ -30,6 +29,8 @@
 
 - **Animated Explainer** — Explain concepts, ideas, history, or knowledge through clear narration and animated scenes.
 - **Storytime Animation** — Turn first-person experiences into animated stories that combine direct-to-camera narration with reenacted moments.
+- **Clay Stop-Motion** — Turn a moral premise into a handcrafted miniature fable driven by character choices, consequences, and change.
+- **Cinematic Drama** — Turn confirmed worldbuilding, characters, and scripts into action-, dialogue-, and conflict-driven AI films, AI motion comics, short dramas, or micro-films.
 - **Visual Journalism** — Cover current affairs, business, industry, and other real-world topics through evidence-led storytelling that combines documentary footage, explanatory animation, maps, charts, and motion graphics.
 
 ## What It Can Do for You
@@ -40,26 +41,9 @@
 - **Keep the entire video consistent.** Prompt-defined styles, required character references, and voice anchors reduce character drift, style shifts, and voice inconsistency across clips.
 - **Go from idea to editable clips.** Beyond writing, it can continue through reference planning, clip generation, and task tracking, then hand the generated clips to your editor for final assembly and light cleanup.
 
-## Video Examples
-
-<table>
-  <tr>
-    <td width="50%">
-      <img src="./repository-assets/examples/video-effect-01.webp" alt="Animated philosophy explainer scene" width="100%">
-    </td>
-    <td width="50%">
-      <img src="./repository-assets/examples/video-effect-02.webp" alt="Animated psychology explainer scene" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><sub><b>Philosophy</b> — bringing ideas into characters and stories</sub></td>
-    <td align="center"><sub><b>Psychology</b> — explaining abstract concepts through concrete events</sub></td>
-  </tr>
-</table>
-
 ## Built-in Visual Styles
 
-The Skill currently includes six visual languages validated for Animated Explainer and one built for Storytime Animation. Each Mode owns its styles so users are not offered unvalidated combinations. A style can become cross-Mode only after it succeeds in real productions across those Modes.
+The Skill manages validated and candidate visual languages by Mode: Animated Explainer has six validated styles plus two candidate hand-drawn styles, Storytime Animation has one dedicated style, Clay Stop-Motion has one candidate handcrafted miniature style, and Cinematic Drama has two candidate styles. Users are not offered unvalidated cross-Mode combinations. A style can become cross-Mode only after it succeeds in real productions across those Modes.
 
 These styles are starting points, not templates. The Skill redesigns the setting, characters, and shots around each new topic. You can also provide a custom textual style for the selected Mode; visual style references are not image assets.
 
@@ -75,7 +59,7 @@ These styles are starting points, not templates. The Skill redesigns the setting
       <a href="./repository-assets/style-previews/clay-stop-motion.webp"><img src="./repository-assets/style-previews/clay-stop-motion.webp" alt="Clay stop-motion preview" height="220"></a><br>
       <b>Clay Stop-Motion</b><br>
       <sub>Handmade clay figures, miniature sets, and tactile frame-by-frame motion</sub><br>
-      <a href="./modes/animated-explainer/styles/clay-stop-motion.md">View style guide</a>
+      <a href="./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md">View style guide</a>
     </td>
   </tr>
   <tr>
@@ -110,17 +94,27 @@ These styles are starting points, not templates. The Skill redesigns the setting
 
 Storytime Animation has its own [Clean White-Character Storytime Animation](./modes/storytime-animation/styles/clean-white-character-storytime-animation.md): rounded white 2D characters, crisp black outlines, limited flat colors, expressive performance, and environments that are more detailed than the cast.
 
+Clay Stop-Motion promotes clay animation from a surface treatment into a dedicated story workflow. Its candidate [Handcrafted Clay Fable Stop-Motion](./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md) style combines handmade puppets, material-specific deformation, miniature-set photography, and readable frame-by-frame poses; it still awaits a full sample validation.
+
+Cinematic Drama initially offers two candidate styles: [Semi-Realistic 3D Chinese Animation Film](./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md) and [Semi-Realistic Eastern Dark-Fantasy 3D Film](./modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md). Both remain candidates until an end-to-end sample is validated.
+
 ## More Than a Look: Reusable Voices
 
-Alongside the seven prompt-defined visual styles, the Skill includes multiple standardized Chinese and English voices.
+Alongside its Mode-owned prompt-defined styles, the Skill includes multiple standardized Chinese and English voices.
 
 You can use one of these voices directly, or create a dedicated voice for the current production from the first clip. The Skill asks you to make the choice—it never silently decides the style or voice for you.
 
+Cinematic Drama instead selects or creates a separate confirmed voice reference for every speaking character before formal video generation.
+
 See the complete [built-in voice library](./references/reference-asset-library.md).
 
-## Production-Validated Workflows
+## Workflow Status
 
 Storytime Animation adds first-person story collection, a reusable Storytime-only [character library](./modes/storytime-animation/characters/character-library.md), conversational character co-design, narrator performance, and flexible movement between direct address and reenactment. Animated Explainer retains the production workflow that existed before the Mode architecture.
+
+Clay Stop-Motion now has a complete candidate workflow for developing moral premises into fables, planning puppet, recurring-set, and hero-prop references, writing performance-aware narration, and directing Seedance with explicit key poses, physical contact, material response, camera paths, and end states. It still awaits its first end-to-end sample validation.
+
+Cinematic Drama now has a complete candidate workflow. It starts from confirmed worldbuilding, characters, and a script; gives every lead and recurring supporting character an identity reference and a per-character voice, adds 16:9 text-free multi-view cards for leads and important supporting characters when needed, and establishes continuity-critical scene references before generating 15-second dramatic clips. Extras do not require fixed identity or voice assets. It still awaits its first end-to-end sample validation.
 
 1. **Decide what to say.** Research the topic around your audience and target duration, then write a clear, well-structured narration script.
 2. **Decide how it should look.** Choose a built-in or custom prompt-defined style, then create references only for characters who must remain recognizable.
@@ -129,6 +123,10 @@ Storytime Animation adds first-person story collection, a reusable Storytime-onl
 5. **Finish in an editor.** Download every generated clip, then manually assemble and lightly trim failed edge frames, tiny end-of-clip audio glitches, pacing, and cut points. Automated assembly remains available only when explicitly requested.
 
 The production rhythm validated so far breaks a 1–5 minute video into 15-second clips. Animated Explainer typically targets roughly 60 Chinese characters or about 32 English words and around five shots. English Storytime targets 30 spoken words, normally 28–32, and usually uses 3–5 shots, with about four as the current stable starting point.
+
+The candidate Cinematic Drama rhythm typically uses five shots per 15-second clip, dropping to four or three for longer performance, complex action, or dramatic pauses. Formal clips are locked to Seedance 2.0 Pro at 720p; the workflow does not proactively test Seedance 2.5 Pro or upgrade to 1080p.
+
+Clay Stop-Motion begins sample testing with 3–5 shots per 15-second clip, usually around four, and deliberately leaves more room for stepped key poses, prop contact, material response, and pauses. Narration-density targets remain candidates until a full production validates them.
 
 ## Installation
 
@@ -158,13 +156,21 @@ Or include more creative direction:
 
 > Use the `director` skill to turn “Why do people procrastinate?” into a 90-second psychology explainer. Use a gentle tone and a hand-drawn style, and confirm the script and visual direction with me first.
 
+To develop a moral story directly in clay stop-motion:
+
+> Use director's Clay Stop-Motion Mode to create a 90-second fable about a young fox who keeps taking shortcuts. Confirm the moral premise and story outline before designing the clay puppets, miniature sets, and Seedance prompts.
+
+With confirmed worldbuilding and a script, you can go straight into dramatic production:
+
+> Use director's Cinematic Drama Mode to produce this approved duel scene as an AI motion comic. Establish the character cards, per-character voices, and scene references first, then give me the prompt for every clip.
+
 The Skill will guide you through the necessary choices. You do not need to understand Seedance prompting, voice anchors, or multimodal asset connections in advance.
 
 ## Tools and Scope
 
 The officially maintained and production-tested media execution path currently uses [LibTV CLI](https://libtv.ai/). The underlying methods for narration structure, visual consistency, character references, multi-shot direction, and voice management are not tied to a single platform. After reviewing the latest official documentation for the target platform, they can also be adapted to Higgsfield, Jimeng, and other multimodal generation CLIs.
 
-The current workflow is designed primarily for 1–5 minute videos assembled from multiple 15-second clips. Seedance 2.5 Pro's 30-second clips have not yet been systematically validated, so they are not presented as a default capability of this release.
+The current workflow is designed primarily for 1–5 minute videos assembled from multiple 15-second clips. Formal Cinematic Drama clips are locked to Seedance 2.0 Pro at 720p; the workflow does not proactively test Seedance 2.5 Pro or upgrade to 1080p.
 
 For the full execution rules, read [SKILL.md](./SKILL.md). The methods for narration, video prompts, voice references, and cover production are organized under [`references/`](./references/).
 
