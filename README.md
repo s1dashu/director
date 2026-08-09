@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
 - **Clay Stop-Motion** — Turn a moral premise into a handcrafted miniature fable driven by character choices, consequences, and change.
 - **Cinematic Drama** — Turn confirmed worldbuilding, characters, and scripts into action-, dialogue-, and conflict-driven AI films, AI motion comics, short dramas, or micro-films.
 
-https://github.com/user-attachments/assets/8d7ca59b-3d13-488c-bb26-c77b75e90406
+https://github.com/user-attachments/assets/d7f23943-4fce-4c39-8815-3515fc354f87
 
 - **Visual Journalism** — Cover current affairs, business, industry, and other real-world topics through evidence-led storytelling that combines documentary footage, explanatory animation, maps, charts, and motion graphics.
 
