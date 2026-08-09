@@ -35,7 +35,6 @@ https://github.com/user-attachments/assets/60e7e51f-8d3e-4004-a88d-f80f6f209d4d
 
 https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
 
-- **Clay Stop-Motion** — Turn a moral premise into a handcrafted miniature fable driven by character choices, consequences, and change.
 - **Cinematic Drama** — Turn confirmed worldbuilding, characters, and scripts into action-, dialogue-, and conflict-driven AI films, AI motion comics, short dramas, or micro-films.
 
 https://github.com/user-attachments/assets/d7f23943-4fce-4c39-8815-3515fc354f87
