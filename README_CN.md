@@ -1,7 +1,7 @@
 <h1 align="center">director</h1>
 
 <p align="center">
-  <a href="./README.md">English</a> · <strong>简体中文</strong>
+  <strong>简体中文</strong>
 </p>
 
 <p align="center">
@@ -96,6 +96,15 @@ Skill 按 Mode 管理已验证与候选的视觉语言：Animated Explainer 目�
       <b>多巴胺萌趣 3D 动画</b><br>
       <sub>Q 弹角色、明亮配色与充满活力的画面层次</sub><br>
       <a href="./modes/animated-explainer/styles/dopamine-cute-3d-animation.md">查看风格详情</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top">
+      <a href="./repository-assets/style-previews/eastern-fantasy-phoenix.webp"><img src="./repository-assets/style-previews/eastern-fantasy-phoenix.webp" alt="东方奇幻 3D 动画电影天凤效果图" width="49%"></a>
+      <a href="./repository-assets/style-previews/eastern-fantasy-dragon.webp"><img src="./repository-assets/style-previews/eastern-fantasy-dragon.webp" alt="东方奇幻 3D 动画电影真龙效果图" width="49%"></a><br>
+      <b>东方奇幻 3D 动画电影</b><br>
+      <sub>东方神兽造型、华丽国漫材质与统一的半写实 3D 光影</sub><br>
+      <a href="./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md">查看风格详情</a>
     </td>
   </tr>
 </table>
