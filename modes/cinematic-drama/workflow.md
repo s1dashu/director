@@ -14,7 +14,7 @@
 - 本 Mode 不负责从零构建世界观或创作剧本。输入只有题材、灵感或一句故事概念时，明确指出缺少生产前提并停止；不得静默补写设定、剧情或对白。
 - 可以把已确认剧本转成片段表、表演调度和生成 Prompt，但不得改变事件因果、角色动机、台词含义或结局。生产需要改写时先列出冲突并取得用户确认。
 
-如果核心是知识解释，使用 [Animated Explainer](../animated-explainer/workflow.md)；如果核心是第一人称经历讲述，使用 [Storytime Animation](../storytime-animation/workflow.md)；如果结论依赖现实证据与资料核查，使用 [Visual Journalism](../visual-journalism/workflow.md)。
+如果核心是知识解释，使用 [Animated Explainer](../animated-explainer/workflow.md)；如果核心是第一人称经历讲述，使用 [Storytime Animation](../storytime-animation/workflow.md)。
 
 ## 开始任务前必须读取
 

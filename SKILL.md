@@ -1,6 +1,6 @@
 ---
 name: director
-description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer、Cinematic Drama 与 Visual Journalism，四个 Mode 均已完成实际作品验证。尚未建立专属 Mode 的类型不得冒充已支持流程。
+description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer 与 Cinematic Drama，三个 Mode 均已完成实际作品验证。尚未建立专属 Mode 的类型不得冒充已支持流程。
 ---
 
 # director
@@ -24,12 +24,11 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 - **[Storytime Animation](modes/storytime-animation/workflow.md)**（`storytime-animation`）：由第一人称讲述者与个人经历驱动，用动画重现自己、身边人或明确改编的故事。已完成首支五片段作品的生成与质量验证。
 - **[Animated Explainer](modes/animated-explainer/workflow.md)**（`animated-explainer`）：使用旁白和动画，在一支短片中讲清楚一个概念、理论、人物思想、历史事件或知识主题。这就是重构前已经完成多期实作验证的原有工作流。
 - **[Cinematic Drama](modes/cinematic-drama/workflow.md)**（`cinematic-drama`，剧情影像）：把已确认的世界观、人物设定、剧本和指定情节制作成由人物行动、对白与戏剧冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。已完成端到端作品验证。
-- **[Visual Journalism](modes/visual-journalism/workflow.md)**（`visual-journalism`）：研究并解释财经、时政、产业或其他现实议题，以证据、现实素材和论点驱动叙事，混合纪录片实拍、档案材料、地图、解释性动画与动态图表。已完成端到端作品验证。
 选定 Mode 后，在任何采集、研究、写作、分镜或素材规划之前完整读取对应 `workflow.md` 及其指定的专属文档。不把 Animated Explainer 的旁白结构、字数、分镜、封面或纯动画切片流程默认套用到其他 Mode。
 
 ## 当前能力与扩展边界
 
-当前只有上方列出的四个 Mode 属于已进入实现的制作能力，四者均已完成实际作品验证。音乐视频及其他尚未建立 Mode 的类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为已验证。
+当前只有上方列出的三个 Mode 属于已进入实现的制作能力，三者均已完成实际作品验证。音乐视频及其他尚未建立 Mode 的类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为已验证。
 
 用户要求尚未建立专属 Mode 的视频类型时，明确说明当前缺少该类型的专属工作流；可以与用户共同定义目标、输入、叙事结构、素材策略、质量门槛和验证作品，但不得静默套用 Animated Explainer 或 Storytime Animation。新增 Mode 应放入 `modes/<mode>/`，把类型专属流程、style 和 Prompt 方法留在该 Mode 内；只有真正跨类型复用的能力才提升到 `references/`。
 
@@ -52,11 +51,6 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 - [多巴胺萌趣 3D 动画](modes/animated-explainer/styles/dopamine-cute-3d-animation.md)
 - [Neo-naive Doodle 新朴拙涂鸦动画](modes/animated-explainer/styles/neo-naive-doodle-animation.md)（候选，待样片验证）
 - [朴拙绘画感抒情动画](modes/animated-explainer/styles/painterly-naive-lyrical-animation.md)（候选，待样片验证）
-
-**Visual Journalism**
-
-- [现代编辑部 Visual Journalism](modes/visual-journalism/styles/modern-editorial-visual-journalism.md)
-- [国际主义编辑设计](modes/visual-journalism/styles/internationalist-editorial-design.md)
 
 **Cinematic Drama**
 
@@ -98,7 +92,7 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 ## 全 Mode 共享的片段规则
 
 - 同一支作品中，相同时长片段的旁白长度应尽可能接近。模型可能按文本量动态改变语速；如果相邻片段文字量差异过大，即使视频时长相同，也会造成一段明显赶读、下一段突然放慢的节奏波动。需要容纳更多信息时，优先改稿或重新拆分片段，不依赖模型大幅加速朗读。
-- 使用 15 秒口播片段时，在语义自然、证据完整和画面有足够阅读时间的前提下，尽量向约 60 个中文汉字或 30 个实际朗读英文单词靠拢，并让全片各段落在相近范围内。Animated Explainer 中文旁白仍优先落在 59–61 个汉字，只有为了语义自然完整时才放宽到 58–62 个汉字；英文 Storytime 通常保持 28–32 个单词且超过 32 个必须先缩短确认，Animated Explainer 以约 32 个英文单词作为可调整目标。Visual Journalism 不把目标字数当作硬性事实裁切线；证据密度、限定语和图表阅读时间需要偏离时，保留必要内容并重新平衡其他片段。
+- 使用 15 秒口播片段时，在语义自然和画面有足够阅读时间的前提下，尽量向约 60 个中文汉字或 30 个实际朗读英文单词靠拢，并让全片各段落在相近范围内。Animated Explainer 中文旁白仍优先落在 59–61 个汉字，只有为了语义自然完整时才放宽到 58–62 个汉字；英文 Storytime 通常保持 28–32 个单词且超过 32 个必须先缩短确认，Animated Explainer 以约 32 个英文单词作为可调整目标。
 - 任何 Mode 编写多镜头视频 Prompt 时，相邻镜头默认直接硬切，不写擦除、形变、融化或其他装饰性转场。只有连续性本身是创作重点的特殊长镜头，尤其长时间动作、追逐或打斗编排，才设计不中断的连续调度。
 - Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p；不主动试用 Seedance 2.5 Pro，不主动升级 1080p。常见快节奏片段以 5 镜为起点，需要长表演、复杂动作或情绪停顿时使用 4 镜或 3 镜。
 
@@ -123,10 +117,8 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 | 选择 Mode，或开始采集、研究、写作、分镜与制作 | 当前选定的 [Mode 文件](#mode-选择与路由) |
 | 编写、改写或拆分 Animated Explainer 旁白 | [Animated Explainer 流程](modes/animated-explainer/workflow.md)和[旁白讲稿写作指南](modes/animated-explainer/narration-script-guide.md) |
 | 采集、改编或编写第一人称故事 | [Storytime Animation 流程](modes/storytime-animation/workflow.md) |
-| 研究现实议题，或编写 Visual Journalism 旁白与素材结构 | [Visual Journalism 流程](modes/visual-journalism/workflow.md)和[研究与证据指南](modes/visual-journalism/research-and-evidence-guide.md) |
 | 制作 AI 电影、AI 漫剧、短剧或微电影 | [Cinematic Drama 流程](modes/cinematic-drama/workflow.md)、[视觉与声音参考资产指南](modes/cinematic-drama/reference-development-guide.md)和当前 style |
 | 编写、改写或排查 Cinematic Drama 视频 Prompt | [Cinematic Drama 流程](modes/cinematic-drama/workflow.md)、[专属视频 Prompt 指南](modes/cinematic-drama/video-prompt-guide.md)、当前 style、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
-| 编写、改写或排查 Visual Journalism 视频 Prompt | [Visual Journalism 流程](modes/visual-journalism/workflow.md)、[专属视频 Prompt 指南](modes/visual-journalism/video-prompt-guide.md)、所选 style、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
 | 规划或生成人物参考 | [人物参考图指南](references/character-reference-image-guide.md)、当前 Mode 和所选 style；Storytime 另读[人物形象库](modes/storytime-animation/characters/character-library.md)，Cinematic Drama 另读[视觉与声音参考资产指南](modes/cinematic-drama/reference-development-guide.md) |
 | 编写、改写或排查视频生成 Prompt | 当前 Mode、[共享视频生成 Prompt 指南](references/video-generation-prompt-guide.md)和目标模型官方指南 |
 | 选择、建立、转换或更换音色 | [内置音色库](references/reference-asset-library.md)和[音色参考与音频转换指南](references/voice-reference-guide.md) |

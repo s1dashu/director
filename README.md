@@ -24,13 +24,13 @@
 
 `director` 是一个用于导演和制作完整视频的 Agent Skill。
 
-你可以从一句主题、一段亲身经历、一份定稿剧本，或一个需要调查的现实问题开始。director 会帮助你梳理内容、完成讲稿或制作拆解、确定视觉方向、设计人物与声音、规划镜头，并继续生成可供剪辑的视频片段。
+你可以从一句主题、一段亲身经历，或一份定稿剧本开始。director 会帮助你梳理内容、完成讲稿或制作拆解、确定视觉方向、设计人物与声音、规划镜头，并继续生成可供剪辑的视频片段。
 
 它适合希望与 Agent 一起完成整支视频的人，而不只是获得一段文案、一组分镜或一个孤立镜头。
 
 ## 创作模式
 
-director 根据作品的叙事核心提供四种创作模式。每种模式有独立的内容结构、视觉方法和制作流程。
+director 根据作品的叙事核心提供三种创作模式。每种模式有独立的内容结构、视觉方法和制作流程。
 
 ### Animated Explainer｜动画解说
 
@@ -53,12 +53,6 @@ https://github.com/user-attachments/assets/60e7e51f-8d3e-4004-a88d-f80f6f209d4d
 <img src="./repository-assets/workflow-diagrams/cinematic-drama-workflow.png" alt="Cinematic Drama 制作流程：确认剧本与情节、拆分 15 秒片段、锁定视觉风格、人物卡与角色音色、场景与道具参考、片段素材矩阵、确认代表片段、生成并交付剪辑" width="100%">
 
 https://github.com/user-attachments/assets/d7f23943-4fce-4c39-8815-3515fc354f87
-
-### Visual Journalism｜视觉新闻
-
-用事实、数据与现实素材完成视觉化报道和分析。适合财经、时政、产业和社会议题。
-
-<img src="./repository-assets/workflow-diagrams/visual-journalism-workflow.png" alt="Visual Journalism 制作流程：锁定核心问题、证据账本与论证图、视觉锚点与风格、旁白与视觉职责、来源授权与合成、逐片段视频 Prompt、确认代表样片、事实复核后交付" width="100%">
 
 <!-- 视觉风格章节暂时隐藏，风格预览调整完成后恢复
 ## 视觉风格
@@ -147,10 +141,6 @@ Storytime Animation 还提供[清爽白色圆身 Storytime 动画](./modes/story
 ### 制作剧情影像
 
 > 使用 `director` 的 Cinematic Drama Mode，把我已经定稿的这场对决制作成 AI 漫剧。先建立人物、角色声音和场景参考，再拆分剧情片段。
-
-### 制作视觉新闻
-
-> 使用 `director` 的 Visual Journalism Mode，解释这个产业议题。先确认核心问题、事实截止时间和资料来源，再规划旁白、地图、图表与现实素材。
 
 ## 技术说明
 
