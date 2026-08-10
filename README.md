@@ -36,62 +36,25 @@ director 根据作品的叙事核心提供四种创作模式。每种模式有�
 
 把抽象概念、人物思想和知识主题转化为具体场景、人物行动与视觉隐喻。适合解释概念、机制、理论、历史事件和知识主题。
 
-```mermaid
-flowchart LR
-  A["明确主题与受众"] --> B["研究取舍<br/>完成讲稿"]
-  B --> C["规划关键人物<br/>生成参考图"]
-  C --> D["逐片段编写<br/>视频 Prompt"]
-  D --> E["确认片段 1<br/>锁定音色"]
-  E --> F["生成全部片段"]
-  F --> G["交付剪辑"]
-```
+<img src="./repository-assets/workflow-diagrams/animated-explainer-workflow.png" alt="Animated Explainer 制作流程：明确主题与受众、研究取舍与讲稿、关键人物参考图、逐片段视频 Prompt、确认片段 1 与音色、生成全部片段、交付剪辑" width="100%">
 
 ### Storytime Animation｜故事动画
 
 让讲述者既能面对观众回看往事，也能进入事件重现，在讲述与表演之间自然切换。适合亲身经历、身边人的故事，以及明确说明经过改编或虚构的第一人称作品。
 
-```mermaid
-flowchart LR
-  A["逐轮采集故事"] --> B["确认隐私<br/>与改编边界"]
-  B --> C["完成第一人称讲稿<br/>设计讲述者形象"]
-  C --> D["安排讲述层<br/>与重现层"]
-  D --> E["逐片段编写<br/>视频 Prompt"]
-  E --> F["确认片段 1<br/>锁定音色"]
-  F --> G["生成全部片段"]
-  G --> H["交付剪辑"]
-```
+<img src="./repository-assets/workflow-diagrams/storytime-animation-workflow.png" alt="Storytime Animation 制作流程：逐轮采集故事、隐私与改编边界、第一人称讲稿、讲述者形象设计、讲述层与重现层、逐片段视频 Prompt、确认片段 1 与音色、生成并交付剪辑" width="100%">
 
 ### Cinematic Drama｜剧情影像
 
 用统一的人物、场景和声音建立连续的剧情世界，让表演、对白、动作与镜头共同推动故事。适合把已有世界观、人物设定和剧本制作成 AI 电影、AI 漫剧、短剧或微电影。
 
-```mermaid
-flowchart LR
-  A["确认剧本<br/>拆分情节片段"] --> B["锁定视觉风格"]
-  B --> C["建立人物卡<br/>角色音色<br/>场景与道具参考"]
-  C --> D["逐片段素材矩阵"]
-  D --> E["编写全部<br/>视频 Prompt"]
-  E --> F["生成代表片段<br/>用户确认"]
-  F --> G["生成全部片段"]
-  G --> H["交付剪辑"]
-```
+<img src="./repository-assets/workflow-diagrams/cinematic-drama-workflow.png" alt="Cinematic Drama 制作流程：确认剧本与情节、拆分 15 秒片段、锁定视觉风格、人物卡与角色音色、场景与道具参考、片段素材矩阵、确认代表片段、生成并交付剪辑" width="100%">
 
 ### Visual Journalism｜视觉新闻
 
 用事实、数据与现实素材完成视觉化报道和分析。适合财经、时政、产业和社会议题。
 
-```mermaid
-flowchart LR
-  A["锁定核心问题<br/>与事实截止时间"] --> B["建立证据账本<br/>与论证图"]
-  B --> C["寻找视觉锚点<br/>选择视觉风格"]
-  C --> D["同步写旁白<br/>与视觉职责表"]
-  D --> E["规划来源授权<br/>与合成边界"]
-  E --> F["逐片段编写<br/>视频 Prompt"]
-  F --> G["生成代表样片<br/>锁定音色"]
-  G --> H["生成全部片段"]
-  H --> I["事实复核"]
-  I --> J["交付剪辑"]
-```
+<img src="./repository-assets/workflow-diagrams/visual-journalism-workflow.png" alt="Visual Journalism 制作流程：锁定核心问题、证据账本与论证图、视觉锚点与风格、旁白与视觉职责、来源授权与合成、逐片段视频 Prompt、确认代表样片、事实复核后交付" width="100%">
 
 > Storytime Animation 与 Animated Explainer 已完成实际作品验证。Cinematic Drama 与 Visual Journalism 已建立工作流，正在进行首轮样片验证。
 
