@@ -91,7 +91,6 @@ Mode 和执行工具相互独立：Mode 决定制作什么，工具文档决定�
 当前工具文档：
 
 - **[LibTV CLI](tools/libtv-cli.md)**：当前正式维护且验证最充分的执行路径。
-- **[Higgsfield CLI](tools/higgsfield-cli.md)**：已完成安装、认证、workspace、实时 schema、素材、Seedance 2.0、任务跟踪与结果边界的文档适配，尚未完成付费生成和完整作品的端到端实作验证。
 - **[即梦 CLI](tools/jimeng-cli.md)**：已完成 OAuth、session、生成模式、Seedance 2.0 全能参考、异步查询与 CLI 下载的文档适配，尚未完成付费生成和完整作品的端到端实作验证。
 
 工具专属命令、模型别名、输入模式、参数映射、任务跟踪和下载规则只在对应 `tools/` 文档中维护，不在 Mode、style 或共享 references 中复制。

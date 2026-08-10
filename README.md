@@ -15,7 +15,6 @@
 
 <p align="center">
   <a href="#创作模式">创作模式</a> ·
-  <a href="#视觉风格">视觉风格</a> ·
   <a href="#人物与声音">人物与声音</a> ·
   <a href="#安装">安装</a> ·
   <a href="#开始创作">开始创作</a>
@@ -96,6 +95,7 @@ flowchart LR
 
 > Storytime Animation 与 Animated Explainer 已完成实际作品验证。Cinematic Drama 与 Visual Journalism 已建立工作流，正在进行首轮样片验证。
 
+<!-- 视觉风格章节暂时隐藏，风格预览调整完成后恢复
 ## 视觉风格
 
 director 可以根据内容选择合适的视觉语言，也可以使用你提供的自定义风格描述。风格会贯穿人物造型、场景设计、材质、色彩、光影与运动方式，同时每一期的画面和镜头都会围绕具体内容重新创作。
@@ -153,6 +153,7 @@ director 可以根据内容选择合适的视觉语言，也可以使用你提�
 Storytime Animation 还提供[清爽白色圆身 Storytime 动画](./modes/storytime-animation/styles/clean-white-character-storytime-animation.md)，用白色圆身二维人物、利落粗线和清楚的表演呈现轻松、亲近的个人故事。
 
 你也可以直接描述自己想要的画面，例如"温暖的彩铅绘本""克制的黑白编辑插画"或"雨夜中的东方奇幻 3D 电影"。
+-->
 
 ## 人物与声音
 
@@ -188,7 +189,7 @@ Storytime Animation 还提供[清爽白色圆身 Storytime 动画](./modes/story
 
 ## 技术说明
 
-`director` 通过 [LibTV CLI](./tools/libtv-cli.md) 完成媒体生成，同时也支持 [Higgsfield CLI](./tools/higgsfield-cli.md) 和[即梦 CLI](./tools/jimeng-cli.md)。
+`director` 通过 [LibTV CLI](./tools/libtv-cli.md) 完成媒体生成，同时也支持[即梦 CLI](./tools/jimeng-cli.md)。
 
 ## 许可证
 
