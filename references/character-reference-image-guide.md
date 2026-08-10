@@ -12,7 +12,7 @@
 
 ## 人物参考图规格
 
-人物参考图的目标是让模型稳定识别角色。视图规格由当前 Mode 决定：Cinematic Drama 必须完整读取其[视觉与声音参考资产指南](../modes/cinematic-drama/reference-development-guide.md)，让主角和跨片段配角至少拥有可直接接入视频的人物参考，并按角色重要性与制作速度决定是否补充 16:9 无文字多视图人物卡；Clay Stop-Motion 必须同时读取其[工作流](../modes/clay-stop-motion/workflow.md)，用单人物黏土偶参考锁定轮廓、材料、服装与稳定手作痕迹；其他 Mode 默认先使用最少而充分的参考：
+人物参考图的目标是让模型稳定识别角色。视图规格由当前 Mode 决定：Cinematic Drama 必须完整读取其[视觉与声音参考资产指南](../modes/cinematic-drama/reference-development-guide.md)，让主角和跨片段配角至少拥有可直接接入视频的人物参考，并按角色重要性与制作速度决定是否补充 16:9 无文字多视图人物卡；其他 Mode 默认先使用最少而充分的参考：
 
 - 一张图只出现一个人物，人物无遮挡、占比足够，头发、脸部、体型、服装和主要配色清楚可辨。
 - 单个正面或自然三分之四视角的完整人物通常已经足够。背景可以是纯白、纯色、柔和渐变或不抢主体的简洁环境，不要求必须纯白。
@@ -23,7 +23,7 @@
 
 对 Animated Explainer、Storytime Animation 和其他没有专属规格的 Mode，多视图人物素材可能造成主体混淆、ID 漂移或重复人物，因此优先从单人物单视图开始。Cinematic Drama 使用用户已实测通过的无文字多视图人物卡工作流，可直接接入视频；不得把其他 Mode 的单视图默认规则用来覆盖该 Mode 的专属要求。
 
-Animated Explainer 与 Storytime Animation 不生成独立场景参考图、画风参考图或风格参考图。Clay Stop-Motion 可按专属工作流为反复出现且影响行动的微缩布景和跨片段变化的关键道具建立参考；Cinematic Drama 按专属资产指南生成连续性关键场景参考。所有 Mode 都仍由当前 style 的文字规则约束画风，不用抽象画风参考图取代 style。
+Animated Explainer 与 Storytime Animation 不生成独立场景参考图、画风参考图或风格参考图。Cinematic Drama 按专属资产指南生成连续性关键场景参考。所有 Mode 都仍由当前 style 的文字规则约束画风，不用抽象画风参考图取代 style。
 
 ## 输入视频模型时的图片指代
 

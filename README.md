@@ -51,23 +51,17 @@ https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
 
 ## 内置视觉风格
 
-Skill 按 Mode 管理已验证与候选的视觉语言：Animated Explainer 目前有六套已验证 style 和两套手绘候选 style，Storytime Animation 有一套专属 style，Clay Stop-Motion 有一套手工微缩候选 style，Cinematic Drama 有两套候选 style。不向用户暴露未验证的跨 Mode 组合；只有 style 在多个 Mode 的真实作品中验证成功后，才提升为跨 Mode 共享。
+Skill 按 Mode 管理视觉语言：Animated Explainer、Storytime Animation 与 Cinematic Drama 分别拥有自己的风格选择，不向用户展示其他 Mode 的专属风格。
 
 这些风格是创作起点，不是套模板。Skill 会围绕每一期的内容重新设计场景、人物与镜头；你也可以为当前 Mode 提供自己的文字风格说明。视觉 style 不依赖图片参考资产。
 
 <table>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td colspan="2" align="center" valign="top">
       <a href="./repository-assets/style-previews/cinematic-3d-animation-nietzsche-16x9-v3.webp"><img src="./repository-assets/style-previews/cinematic-3d-animation-nietzsche-16x9-v3.webp" alt="电影感 3D 动画效果图" height="220"></a><br>
       <b>电影感 3D 动画</b><br>
       <sub>手绘质感、克制色彩与富有叙事感的电影光影</sub><br>
       <a href="./modes/animated-explainer/styles/cinematic-3d-animation.md">查看风格详情</a>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="./repository-assets/style-previews/clay-stop-motion.webp"><img src="./repository-assets/style-previews/clay-stop-motion.webp" alt="黏土定格动画效果图" height="220"></a><br>
-      <b>黏土定格动画</b><br>
-      <sub>手工黏土偶、微缩布景与真实可触的逐帧质感</sub><br>
-      <a href="./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md">查看风格详情</a>
     </td>
   </tr>
   <tr>
@@ -111,8 +105,6 @@ Skill 按 Mode 管理已验证与候选的视觉语言：Animated Explainer 目�
 
 Storytime Animation 拥有自己的[清爽白色圆身 Storytime 动画](./modes/storytime-animation/styles/clean-white-character-storytime-animation.md)：白色圆身二维人物、利落黑色粗线、有限平涂色块、清楚的喜剧表演，以及比人物更具体的环境。
 
-Clay Stop-Motion 不再把黏土定格只当作表面画风，而是使用独立故事流程。候选[黏土微缩定格寓言](./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md) style 结合手工角色偶、符合材料的形变、微缩布景摄影与可读的逐格关键姿态，仍待首支完整样片验证。
-
 Cinematic Drama 首轮提供[半写实 3D 国产动画电影](./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)和[半写实东方奇幻暗黑 3D 电影](./modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)两套候选 style，均需经首支样片验证后才能标记为已验证。
 
 ## 不只是画风，还有可复用的声音
@@ -127,7 +119,7 @@ Cinematic Drama 会在正式视频前为每个说话角色分别选择或生成�
 
 ## 创作模式与工作流程
 
-`director` 会先根据作品的叙事核心选择 Mode，再进入对应的创作流程。个人经历、知识解释、寓言、剧情影像与现实议题拥有不同的内容结构、视觉策略和制作方法，不共用一套固定模板。
+`director` 会先根据作品的叙事核心选择 Mode，再进入对应的创作流程。个人经历、知识解释、剧情影像与现实议题拥有不同的内容结构、视觉策略和制作方法，不共用一套固定模板。
 
 ### Storytime Animation｜故事动画
 
@@ -148,16 +140,6 @@ Cinematic Drama 会在正式视频前为每个说话角色分别选择或生成�
 3. 选择适合内容的视觉语言，判断是否需要稳定出现的人物与声音。
 4. 把讲稿拆成片段，为每段重新设计场景、动作、视觉隐喻和多镜头调度。
 5. 先确认第一个片段的整体方向，再完成其余片段；需要发布时继续制作封面与成片素材。
-
-### Clay Stop-Motion｜黏土定格寓言
-
-用手工黏土偶、微缩布景、实体道具和逐格表演创作寓言、品格教育故事与启发性短篇。黏土不只是表面画风，角色的选择、材料的触感和道具状态都会参与叙事。
-
-1. 从道德命题、故事梗概或传统寓言中，找出主角的目标、错误选择、可见代价与最终改变。
-2. 写成由行动和后果自然表达主题的故事，让启发来自因果，而不是结尾训话。
-3. 设计角色偶、反复出现的微缩布景，以及会随剧情变化的关键道具。
-4. 将故事拆成适合逐格表演的片段，设计关键姿态、实体接触、材料反馈、摄影路径和声音。
-5. 先制作最能代表角色、布景与表演方式的片段，确认后继续完成整支作品。
 
 ### Cinematic Drama｜剧情影像
 
@@ -209,10 +191,6 @@ Cinematic Drama 会在正式视频前为每个说话角色分别选择或生成�
 
 > 使用 `director` skill 把“为什么人会拖延”做成一支 90 秒心理科普动画。希望语气温柔，使用手绘风格，先和我确认讲稿与视觉方案。
 
-要直接开发一则黏土定格寓言，也可以这样开始：
-
-> 使用 `director` 的 Clay Stop-Motion Mode，创作一支 90 秒寓言：一只总爱走捷径的小狐狸。先确认道德命题和故事大纲，再设计黏土角色偶、微缩布景与 Seedance Prompt。
-
 已有世界观和剧本时，也可以直接进入剧情生产：
 
 > 使用 `director` 的 Cinematic Drama Mode，把我已经定稿的这场对决制作成 AI 漫剧。先建立人物卡、角色音色和场景参考，再给我逐片段 Prompt。
@@ -221,11 +199,7 @@ Skill 会引导你完成必要选择，你不需要提前了解 Seedance Prompt�
 
 ## 工具与适用范围
 
-`director` 当前支持三条媒体执行 CLI 路径：[LibTV CLI](./tools/libtv-cli.md)、[Higgsfield CLI](./tools/higgsfield-cli.md)和[即梦 CLI](./tools/jimeng-cli.md)。三者都有正式维护的工具适配文档，可用于各自平台的模型查询、素材管理、生成任务、状态跟踪与结果下载。LibTV CLI 是目前实际制作验证最充分、支持程度最好的路径，因此在用户没有指定平台时仍优先推荐；Higgsfield CLI 和即梦 CLI 也是当前已支持路径，而不是未来才可能适配的选项。
-
-目前的工作流主要针对由多个 15 秒片段组成的 1–5 分钟视频。Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p，不主动尝试 Seedance 2.5 Pro 或升级 1080p。
-
-想了解完整执行规则，可以阅读 [SKILL.md](./SKILL.md)。旁白、视频 Prompt、音色参考与封面制作方法分别收录在 [`references/`](./references/) 中。
+`director` 优先推荐使用 [LibTV CLI](./tools/libtv-cli.md) 完成媒体生成，同时也支持 [Higgsfield CLI](./tools/higgsfield-cli.md) 和[即梦 CLI](./tools/jimeng-cli.md)。
 
 ## 许可证
 
