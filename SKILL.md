@@ -1,6 +1,6 @@
 ---
 name: director
-description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer、Cinematic Drama 与 Visual Journalism。Storytime 与 Explainer 已完成实际作品验证，Cinematic Drama 与 Visual Journalism 尚在实作验证中。尚未建立专属 Mode 的类型不得冒充已支持流程。
+description: 导演并制作多类型视频，从创意、研究、剧本、视觉开发、人物与声音设计、分镜和生成 Prompt，一直推进到素材生成、任务追踪与交付。适用于 Storytime Animation、Animated Explainer、Cinematic Drama 与 Visual Journalism，四个 Mode 均已完成实际作品验证。尚未建立专属 Mode 的类型不得冒充已支持流程。
 ---
 
 # director
@@ -23,13 +23,13 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 
 - **[Storytime Animation](modes/storytime-animation/workflow.md)**（`storytime-animation`）：由第一人称讲述者与个人经历驱动，用动画重现自己、身边人或明确改编的故事。已完成首支五片段作品的生成与质量验证。
 - **[Animated Explainer](modes/animated-explainer/workflow.md)**（`animated-explainer`）：使用旁白和动画，在一支短片中讲清楚一个概念、理论、人物思想、历史事件或知识主题。这就是重构前已经完成多期实作验证的原有工作流。
-- **[Cinematic Drama](modes/cinematic-drama/workflow.md)**（`cinematic-drama`，剧情影像）：把已确认的世界观、人物设定、剧本和指定情节制作成由人物行动、对白与戏剧冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。已建立候选工作流，待首支端到端样片验证。
-- **[Visual Journalism](modes/visual-journalism/workflow.md)**（`visual-journalism`）：研究并解释财经、时政、产业或其他现实议题，以证据、现实素材和论点驱动叙事，混合纪录片实拍、档案材料、地图、解释性动画与动态图表。当前已建立首轮候选工作流，尚未完成端到端实作验证。
+- **[Cinematic Drama](modes/cinematic-drama/workflow.md)**（`cinematic-drama`，剧情影像）：把已确认的世界观、人物设定、剧本和指定情节制作成由人物行动、对白与戏剧冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。已完成端到端作品验证。
+- **[Visual Journalism](modes/visual-journalism/workflow.md)**（`visual-journalism`）：研究并解释财经、时政、产业或其他现实议题，以证据、现实素材和论点驱动叙事，混合纪录片实拍、档案材料、地图、解释性动画与动态图表。已完成端到端作品验证。
 选定 Mode 后，在任何采集、研究、写作、分镜或素材规划之前完整读取对应 `workflow.md` 及其指定的专属文档。不把 Animated Explainer 的旁白结构、字数、分镜、封面或纯动画切片流程默认套用到其他 Mode。
 
 ## 当前能力与扩展边界
 
-当前只有上方列出的四个 Mode 属于已进入实现的制作能力，其中 Storytime Animation 与 Animated Explainer 已完成作品验证，Cinematic Drama 与 Visual Journalism 仍是待样片验证的候选工作流。音乐视频及其他尚未建立 Mode 的类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为已验证。
+当前只有上方列出的四个 Mode 属于已进入实现的制作能力，四者均已完成实际作品验证。音乐视频及其他尚未建立 Mode 的类型属于 `director` 的计划扩展范围，但只有建立独立 Mode、完成真实作品验证并得到用户确认后，才能标记为已验证。
 
 用户要求尚未建立专属 Mode 的视频类型时，明确说明当前缺少该类型的专属工作流；可以与用户共同定义目标、输入、叙事结构、素材策略、质量门槛和验证作品，但不得静默套用 Animated Explainer 或 Storytime Animation。新增 Mode 应放入 `modes/<mode>/`，把类型专属流程、style 和 Prompt 方法留在该 Mode 内；只有真正跨类型复用的能力才提升到 `references/`。
 
@@ -55,13 +55,13 @@ description: 导演并制作多类型视频，从创意、研究、剧本、视�
 
 **Visual Journalism**
 
-- [现代编辑部 Visual Journalism](modes/visual-journalism/styles/modern-editorial-visual-journalism.md)（首轮候选，待样片验证）
-- [国际主义编辑设计](modes/visual-journalism/styles/internationalist-editorial-design.md)（候选，待样片验证）
+- [现代编辑部 Visual Journalism](modes/visual-journalism/styles/modern-editorial-visual-journalism.md)
+- [国际主义编辑设计](modes/visual-journalism/styles/internationalist-editorial-design.md)
 
 **Cinematic Drama**
 
-- [半写实 3D 国产动画电影](modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)（候选，待样片验证）
-- [半写实东方奇幻暗黑 3D 电影](modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)（候选，待样片验证）
+- [半写实 3D 国产动画电影](modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)
+- [半写实东方奇幻暗黑 3D 电影](modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)
 
 用户未指定 style 时，只展示当前 Mode 的内置或候选选项并等待选择，不设置静默默认值；自定义文字 style 与该 Mode 的内置 style 具有同等优先级。style 只定义跨作品稳定的媒介、材质、线条、造型、色彩和运动语言，不是固定 Prompt、场景或镜头模板。候选 style 必须明确验证状态，样片经用户确认后才可标记为已验证。
 
