@@ -1,162 +1,236 @@
 <h1 align="center">director</h1>
 
 <p align="center">
+  <strong>简体中文</strong>
+</p>
+
+<p align="center">
   <strong>从第一个想法开始，导演并制作一支完整视频。</strong>
 </p>
 
 <p align="center">
-  <img src="./repository-assets/repository-covers/director-cover.png" alt="director：导演并制作多类型完整视频" width="100%">
+  <img src="./repository-assets/repository-covers/director-cover.png" alt="director：用于导演和制作多类型视频的多 Mode Agent Skill" width="100%">
 </p>
 
-## 我们是什么
+<p align="center">
+  <a href="./SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/Agent-Skill-111111"></a>
+  <a href="#它能帮你做什么"><img alt="Animated Explainer：已通过实际生产验证" src="https://img.shields.io/badge/Explainer-validated-2EA44F"></a>
+  <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-2EA44F"></a>
+</p>
 
-`director` 是一个面向完整视频创作的导演 Agent Skill。
+<p align="center">
+  <a href="#它能帮你做什么">核心能力</a> ·
+  <a href="#内置视觉风格">视觉风格</a> ·
+  <a href="#安装">安装</a> ·
+  <a href="#从一句话开始创作">开始创作</a>
+</p>
 
-它不只是帮你写一段文案或生成一个镜头，而是先理解你想做什么样的作品，再陪你完成创意梳理、研究、故事或讲稿、视觉开发、人物与声音设计、分镜、视频生成和最终交付。
+`director` 是一个用于导演和制作完整视频的 Agent Skill，覆盖从创意、脚本到镜头设计、素材生成和最终交付的完整流程。
 
-不同视频需要不同的导演方法。个人故事、知识解说、黏土寓言、剧情短片和现实议题，各自拥有独立的创作流程，而不是被塞进同一个模板里。
-
-## 使用场景
-
-- 把自己的真实经历或经过改编的个人故事，做成有讲述者、有情节、有表演的动画短片。
-- 把一个概念、理论、人物思想、历史事件或知识主题，讲成清楚、好看、容易理解的动画解说。
-- 从一个道德命题或故事梗概出发，创作由黏土角色、微缩布景和逐格表演完成的寓言短片。
-- 把已经写好的世界观、人物和剧本，制作成由对白、行动和冲突推动的 AI 电影、AI 漫剧、短剧或微电影。
-- 围绕财经、时政、产业和社会议题，用事实、数据、地图、档案与现实画面完成视觉化报道和分析。
-
-## 现在的效果
-
-`director` 可以让旁白、人物、场景、镜头和声音围绕同一个叙事目标协同工作。最终得到的不是彼此无关的生成画面，而是一组能够继续剪辑成片、人物与风格前后一致、每个镜头都承担明确叙事作用的视频片段。
-
-### Animated Explainer
-
-用动画把抽象知识变成具体事件、人物动作和视觉隐喻，让观众既能理解内容，也愿意继续看下去。
+- **Animated Explainer（动画解说）**——通过清晰的旁白和动画场景，解释概念、思想、历史事件或知识主题。
 
 https://github.com/user-attachments/assets/60e7e51f-8d3e-4004-a88d-f80f6f209d4d
 
-### Cinematic Drama
-
-围绕稳定的人物、场景和声音建立连续的剧情世界，让对白、表演、动作和镜头共同推动冲突。
+- **Cinematic Drama（剧情影像）**——把已确认的世界观、人物和剧本制作成由行动、对白与冲突驱动的 AI 电影、AI 漫剧、短剧或微电影。
 
 https://github.com/user-attachments/assets/d7f23943-4fce-4c39-8815-3515fc354f87
 
-### Storytime Animation
-
-让同一个讲述者既能面对观众讲述，也能进入过去的事件中重现经历，在叙述与表演之间自然切换。
+- **Storytime Animation（故事动画）**——把第一人称经历制作成动画故事，结合面向观众的讲述与事件重现。
 
 https://github.com/user-attachments/assets/2c78454b-4c2e-42f9-ade9-3fbfb083dc5b
 
-### 视觉表现
+- **Visual Journalism（视觉新闻）**——围绕时事、财经、产业等现实议题，以证据驱动叙事，结合纪录片实拍、解释性动画、地图、图表和动态图形。
 
-每支作品都可以选择适合内容的视觉语言，也可以从自己的风格描述开始。风格决定作品的媒介、材质、线条、色彩、光影和运动气质，但不会把不同选题套进同一组固定镜头。
+## 它能帮你做什么
+
+- **选择正确的导演语法。** 根据作品由个人经历、知识解释、现实证据还是戏剧行动驱动，选择对应工作流。
+- **把复杂知识讲清楚。** 从主题研究、内容取舍到旁白结构，帮助你建立一条观众听得懂、愿意继续听的叙事线。
+- **把文字变成可生产的导演方案。** 将叙事拆成可执行单元，设计镜头、表演与调度，并按照当前 Mode 输出可生成的 Prompt。
+- **让整支视频保持统一。** 通过文字 style、必要的人物参考与音色锚点，减少跨片段的人物漂移、画风跳变和声音不一致。
+- **从创意一路走到可剪辑片段。** 不止交付文案，还能继续完成参考素材规划、片段生成和任务追踪，再把全部素材交给剪辑工具完成最终拼接与轻量修整。
+
+## 内置视觉风格
+
+Skill 按 Mode 管理已验证与候选的视觉语言：Animated Explainer 目前有六套已验证 style 和两套手绘候选 style，Storytime Animation 有一套专属 style，Clay Stop-Motion 有一套手工微缩候选 style，Cinematic Drama 有两套候选 style。不向用户暴露未验证的跨 Mode 组合；只有 style 在多个 Mode 的真实作品中验证成功后，才提升为跨 Mode 共享。
+
+这些风格是创作起点，不是套模板。Skill 会围绕每一期的内容重新设计场景、人物与镜头；你也可以为当前 Mode 提供自己的文字风格说明。视觉 style 不依赖图片参考资产。
 
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/cinematic-3d-animation-nietzsche-16x9-v3.webp" alt="电影感 3D 动画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/cinematic-3d-animation-nietzsche-16x9-v3.webp"><img src="./repository-assets/style-previews/cinematic-3d-animation-nietzsche-16x9-v3.webp" alt="电影感 3D 动画效果图" height="220"></a><br>
       <b>电影感 3D 动画</b><br>
-      <sub>手绘质感、克制色彩与富有叙事感的电影光影</sub>
+      <sub>手绘质感、克制色彩与富有叙事感的电影光影</sub><br>
+      <a href="./modes/animated-explainer/styles/cinematic-3d-animation.md">查看风格详情</a>
     </td>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/clay-stop-motion.webp" alt="黏土定格动画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/clay-stop-motion.webp"><img src="./repository-assets/style-previews/clay-stop-motion.webp" alt="黏土定格动画效果图" height="220"></a><br>
       <b>黏土定格动画</b><br>
-      <sub>手工黏土偶、微缩布景与真实可触的逐格质感</sub>
+      <sub>手工黏土偶、微缩布景与真实可触的逐帧质感</sub><br>
+      <a href="./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md">查看风格详情</a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/melancholic-blue-simple-line-animation.webp" alt="忧郁蓝调简笔画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/melancholic-blue-simple-line-animation.webp"><img src="./repository-assets/style-previews/melancholic-blue-simple-line-animation.webp" alt="忧郁蓝调简笔画风格效果图" height="220"></a><br>
       <b>忧郁蓝调简笔画</b><br>
-      <sub>冷灰蓝纸面、笨拙铅笔线与安静内省的情绪</sub>
+      <sub>冷灰蓝纸面、笨拙铅笔线与安静内省的情绪</sub><br>
+      <a href="./modes/animated-explainer/styles/melancholic-blue-simple-line-animation.md">查看风格详情</a>
     </td>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/soft-colored-pencil-cute-animation.webp" alt="柔和彩铅萌趣动画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/soft-colored-pencil-cute-animation.webp"><img src="./repository-assets/style-previews/soft-colored-pencil-cute-animation.webp" alt="柔和彩铅萌趣动画效果图" height="220"></a><br>
       <b>柔和彩铅萌趣动画</b><br>
-      <sub>柔软轮廓、温暖纸纹与轻松亲切的可爱表达</sub>
+      <sub>柔软轮廓、温暖纸纹与轻松亲切的可爱表达</sub><br>
+      <a href="./modes/animated-explainer/styles/soft-colored-pencil-cute-animation.md">查看风格详情</a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/clean-line-crayon-animation.webp" alt="清爽线描蜡笔动画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/clean-line-crayon-animation.webp"><img src="./repository-assets/style-previews/clean-line-crayon-animation.webp" alt="清爽线描蜡笔动画效果图" height="220"></a><br>
       <b>清爽线描蜡笔动画</b><br>
-      <sub>明快色块、清楚线描与清爽有序的二维世界</sub>
+      <sub>明快色块、清楚线描与清爽有序的二维世界</sub><br>
+      <a href="./modes/animated-explainer/styles/clean-line-crayon-animation.md">查看风格详情</a>
     </td>
     <td width="50%" align="center" valign="top">
-      <img src="./repository-assets/style-previews/dopamine-cute-3d-animation-16x9-v2.webp" alt="多巴胺萌趣 3D 动画效果图" height="220"><br>
+      <a href="./repository-assets/style-previews/dopamine-cute-3d-animation-16x9-v2.webp"><img src="./repository-assets/style-previews/dopamine-cute-3d-animation-16x9-v2.webp" alt="多巴胺萌趣 3D 动画效果图" height="220"></a><br>
       <b>多巴胺萌趣 3D 动画</b><br>
-      <sub>Q 弹角色、明亮配色与充满活力的画面层次</sub>
+      <sub>Q 弹角色、明亮配色与充满活力的画面层次</sub><br>
+      <a href="./modes/animated-explainer/styles/dopamine-cute-3d-animation.md">查看风格详情</a>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center" valign="top">
-      <img src="./repository-assets/style-previews/eastern-fantasy-male-lead.webp" alt="东方奇幻 3D 动画电影男主人物效果图" width="49%">
-      <img src="./repository-assets/style-previews/eastern-fantasy-female-lead.webp" alt="东方奇幻 3D 动画电影女主人物效果图" width="49%"><br>
+      <a href="./repository-assets/style-previews/eastern-fantasy-male-lead.webp"><img src="./repository-assets/style-previews/eastern-fantasy-male-lead.webp" alt="东方奇幻 3D 动画电影男主人物效果图" width="49%"></a>
+      <a href="./repository-assets/style-previews/eastern-fantasy-female-lead.webp"><img src="./repository-assets/style-previews/eastern-fantasy-female-lead.webp" alt="东方奇幻 3D 动画电影女主人物效果图" width="49%"></a><br>
       <b>东方奇幻 3D 动画电影</b><br>
-      <sub>东方人物造型、华丽国漫材质与统一的半写实 3D 光影</sub>
+      <sub>东方人物造型、华丽国漫材质与统一的半写实 3D 光影</sub><br>
+      <a href="./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md">查看风格详情</a>
     </td>
   </tr>
 </table>
 
-## 五种创作模式
+Storytime Animation 拥有自己的[清爽白色圆身 Storytime 动画](./modes/storytime-animation/styles/clean-white-character-storytime-animation.md)：白色圆身二维人物、利落黑色粗线、有限平涂色块、清楚的喜剧表演，以及比人物更具体的环境。
+
+Clay Stop-Motion 不再把黏土定格只当作表面画风，而是使用独立故事流程。候选[黏土微缩定格寓言](./modes/clay-stop-motion/styles/handcrafted-clay-fable-stop-motion.md) style 结合手工角色偶、符合材料的形变、微缩布景摄影与可读的逐格关键姿态，仍待首支完整样片验证。
+
+Cinematic Drama 首轮提供[半写实 3D 国产动画电影](./modes/cinematic-drama/styles/semi-realistic-3d-chinese-animation-film.md)和[半写实东方奇幻暗黑 3D 电影](./modes/cinematic-drama/styles/semi-realistic-eastern-dark-fantasy-3d-film.md)两套候选 style，均需经首支样片验证后才能标记为已验证。
+
+## 不只是画风，还有可复用的声音
+
+除了按 Mode 管理的文字 style，Skill 还随包提供多种标准化中文与英文音色。
+
+你可以直接选用现成音色，也可以从第一个片段开始创造本期专属声音。Skill 会先与你确认选择，不会擅自替你决定风格或音色。
+
+Cinematic Drama 会在正式视频前为每个说话角色分别选择或生成音色参考，而不是全片只锁定一个旁白音色。
+
+完整音色清单见[内置音色库](./references/reference-asset-library.md)。
+
+## 创作模式与工作流程
+
+`director` 会先根据作品的叙事核心选择 Mode，再进入对应的创作流程。个人经历、知识解释、寓言、剧情影像与现实议题拥有不同的内容结构、视觉策略和制作方法，不共用一套固定模板。
 
 ### Storytime Animation｜故事动画
 
-适合讲述亲身经历、身边人的故事，或明确标注为虚构与改编的第一人称故事。它的核心是一个鲜明、可信的讲述者：观众既能听见“现在的我”如何回看，也能看见“当时的我”如何行动。
+以第一人称讲述者和个人经历为核心，适合亲身故事、身边人的故事，以及明确说明经过改编或虚构的第一人称作品。讲述者既可以面对观众回看往事，也可以进入事件重现，与过去的自己和其他人物共同表演。
 
-**工作流：**
-
-1. 通过对话采集事件、人物、细节、转折，以及需要保护或改编的信息。
-2. 找出讲述者当时的目标、事情如何升级、关键转折和最终后果，写成自然的第一人称故事。
-3. 共同确定讲述者形象和声音，并区分面向观众的讲述与过去事件的重现。
-4. 把故事拆成有变化的片段，逐段设计表演、场景和镜头。
-5. 先确认一个代表片段的画面与声音，再完成其余片段并交付剪辑。
+1. 通过对话采集人物、目标、事件细节、转折与结局，并确认隐私和改编边界。
+2. 建立“当时的我”和“现在的我”两层视角，写成自然、有个性、有事件变化的第一人称讲稿。
+3. 确定讲述者形象、重要配角与声音，让人物身份在整支作品中保持一致。
+4. 按故事节点拆分片段，为每段选择讲述、重现或两者切换，并设计具体表演与镜头。
+5. 先完成一个代表片段，确认讲述者、画面与声音方向后，再制作其余内容。
 
 ### Animated Explainer｜动画解说
 
-适合解释概念、机制、理论、人物思想、历史事件和知识问题。它不是让旁白配上泛泛的动画，而是把每个观点转化为观众能够看见、理解和记住的画面。
+用旁白和动画讲清楚一个概念、机制、理论、人物思想、历史事件或知识主题。重点不是让画面重复旁白，而是把抽象观点转化为具体事件、视觉隐喻、人物行动和清楚的因果关系。
 
-**工作流：**
-
-1. 明确主题、受众和观众看完后应该真正理解的核心问题。
-2. 研究并取舍信息，写成结构清楚、节奏自然的完整讲稿。
-3. 选择视觉语言，判断是否需要稳定出现的人物，并建立必要的人物与声音设计。
-4. 把讲稿拆成片段，为每段重新设计具体事件、视觉隐喻、动作和镜头调度。
-5. 先确认第一个片段的整体方向，再完成其余内容；需要发布时继续完成封面与成片素材。
+1. 明确主题、受众、时长，以及观众看完后应该真正理解的问题。
+2. 研究并取舍信息，完成结构清楚、节奏自然的完整讲稿。
+3. 选择适合内容的视觉语言，判断是否需要稳定出现的人物与声音。
+4. 把讲稿拆成片段，为每段重新设计场景、动作、视觉隐喻和多镜头调度。
+5. 先确认第一个片段的整体方向，再完成其余片段；需要发布时继续制作封面与成片素材。
 
 ### Clay Stop-Motion｜黏土定格寓言
 
-适合寓言、品格教育故事和启发性短篇。黏土在这里不只是一种表面画风：角色偶、微缩布景、实体道具和逐格动作共同承担故事的因果与表演。
+用手工黏土偶、微缩布景、实体道具和逐格表演创作寓言、品格教育故事与启发性短篇。黏土不只是表面画风，角色的选择、材料的触感和道具状态都会参与叙事。
 
-**工作流：**
-
-1. 从道德命题、故事梗概或传统寓言中，找出主角的目标、错误选择、可见代价和最终改变。
-2. 写成由行动和后果自然表达主题的故事，避免用结尾训话代替剧情。
-3. 设计黏土角色偶、会反复出现的微缩布景，以及会随剧情改变状态的关键道具。
-4. 把故事拆成逐格表演片段，设计关键姿态、实体接触、材料反馈、摄影路径和声音。
-5. 先制作最能代表角色、布景和表演方式的片段，确认后继续完成整支作品。
+1. 从道德命题、故事梗概或传统寓言中，找出主角的目标、错误选择、可见代价与最终改变。
+2. 写成由行动和后果自然表达主题的故事，让启发来自因果，而不是结尾训话。
+3. 设计角色偶、反复出现的微缩布景，以及会随剧情变化的关键道具。
+4. 将故事拆成适合逐格表演的片段，设计关键姿态、实体接触、材料反馈、摄影路径和声音。
+5. 先制作最能代表角色、布景与表演方式的片段，确认后继续完成整支作品。
 
 ### Cinematic Drama｜剧情影像
 
-适合把已有的世界观、人物设定和剧本制作成 AI 电影、AI 漫剧、短剧或微电影。故事由人物行动、对白、关系和冲突推进，重点是让不同片段仍然属于同一个剧情世界。
+把已经确认的世界观、人物设定和剧本制作成 AI 电影、AI 漫剧、短剧或微电影。作品由人物行动、对白、关系和冲突推进，重点是让不同片段始终属于同一个剧情世界。
 
-**工作流：**
-
-1. 读取并锁定已有世界观、人物、剧本和本次要制作的具体情节。
-2. 按事件、对白、动作和情绪节拍拆分剧情，明确每个片段从什么状态开始、以什么变化结束。
-3. 为主要人物建立统一的人物形象、服装和声音，并为关键场景、道具或生物建立连续性参考。
-4. 逐片段安排演员走位、表演、对白、动作、摄影和切镜，同时核对所有出场元素。
-5. 先用代表性片段确认人物、声音、场景和风格，再完成其余剧情片段并交付剪辑。
+1. 读取并锁定已有世界观、人物、剧本，以及本次要制作的具体情节。
+2. 按事件、对白、动作与情绪节拍拆分剧情，明确每个片段的开始状态和结束变化。
+3. 为主要人物建立统一的形象、服装和声音，并为关键场景、道具或生物建立连续性参考。
+4. 逐片段安排人物走位、表演、对白、动作、摄影和切镜，同时核对所有出场元素。
+5. 先用代表性片段确认人物、声音、场景与风格，再完成其余剧情片段并交付剪辑。
 
 ### Visual Journalism｜视觉新闻
 
-适合财经、时政、产业和社会议题。它以事实与证据为起点，通过现实素材、档案、地图、数据图表和解释性动画，让观众看懂一个现实问题如何发生、规模有多大、又会影响谁。
-
-**工作流：**
+围绕财经、时政、产业和社会议题，以可核查的事实与证据推动叙事。现实影像、档案、地图、数据图表和解释性动画分别承担证明、定位、比较、解释机制和呈现后果的作用。
 
 1. 锁定核心问题、事实截止时间，以及视频准备回答的主要判断。
 2. 收集并核验来源，建立事实、数据、引语、限制和不确定性之间的证据关系。
-3. 从证据中形成论点和因果链，为每段旁白同时安排对应的视觉职责。
-4. 根据内容选择真实影像、档案、地图、图表、机制动画或人物现场，并明确来源与表达边界。
-5. 先制作能代表整支作品信息密度的片段，完成画面、文字、数字和声音检查后，再推进整支视频。
+3. 从证据中形成论点与因果链，为每段旁白同步安排对应的视觉职责。
+4. 根据内容选择真实影像、档案、地图、图表、机制动画或人物现场，并确认来源与表达边界。
+5. 先制作能代表整支作品信息密度的片段，完成画面、文字、数字与声音检查后，再推进完整视频。
 
-不同 Mode 可以使用不同的视觉风格和声音结构，但它们共享同一个目标：让创意、内容、画面、表演和声音最终汇聚成一支完整、可观看的视频。
+无论选择哪一种 Mode，`director` 都会把内容、视觉、人物、声音和镜头组织成一条完整的制作路径，并在关键方向得到确认后再继续推进。
+
+## 安装
+
+将本仓库克隆或复制到你的 Agent 可以读取的 skills 目录。
+
+如果你使用 Codex，也可以直接告诉它：
+
+> 从 `https://github.com/s1dashu/director` 安装 `director` skill。
+
+在 Codex 中，显式调用 skill 时需要使用 `$` 前缀，所以写作 `$director`。Skill 本身的名称仍然只是 `director`；其他 Agent 使用各自运行环境的调用约定。
+
+### 从 `animated-voiceover` 迁移
+
+本项目由 `animated-voiceover` 原地重命名为 `director`。GitHub 会保留仓库历史、Stars、Issues，并把旧仓库地址重定向到新地址；但用户本地复制安装的 skill 目录不会自动改名。
+
+- 将已有 Git remote 更新为 `https://github.com/s1dashu/director.git`。
+- 安装 `director` 后删除本地旧 `animated-voiceover` skill 目录，避免 Agent 同时发现两份不同版本的工作流。
+- Codex 中把 `$animated-voiceover` 改为 `$director`；其他 Agent 使用各自的 skill 调用方式。
+
+## 从一句话开始创作
+
+安装后，你可以这样开始：
+
+> 使用 `director` skill 创作一支两分钟的动画科普视频，主题是：两分钟了解斯多葛主义。
+
+也可以带上自己的要求：
+
+> 使用 `director` skill 把“为什么人会拖延”做成一支 90 秒心理科普动画。希望语气温柔，使用手绘风格，先和我确认讲稿与视觉方案。
+
+要直接开发一则黏土定格寓言，也可以这样开始：
+
+> 使用 `director` 的 Clay Stop-Motion Mode，创作一支 90 秒寓言：一只总爱走捷径的小狐狸。先确认道德命题和故事大纲，再设计黏土角色偶、微缩布景与 Seedance Prompt。
+
+已有世界观和剧本时，也可以直接进入剧情生产：
+
+> 使用 `director` 的 Cinematic Drama Mode，把我已经定稿的这场对决制作成 AI 漫剧。先建立人物卡、角色音色和场景参考，再给我逐片段 Prompt。
+
+Skill 会引导你完成必要选择，你不需要提前了解 Seedance Prompt、音色锚点或多模态素材连接方式。
+
+## 工具与适用范围
+
+`director` 当前支持三条媒体执行 CLI 路径：[LibTV CLI](./tools/libtv-cli.md)、[Higgsfield CLI](./tools/higgsfield-cli.md)和[即梦 CLI](./tools/jimeng-cli.md)。三者都有正式维护的工具适配文档，可用于各自平台的模型查询、素材管理、生成任务、状态跟踪与结果下载。LibTV CLI 是目前实际制作验证最充分、支持程度最好的路径，因此在用户没有指定平台时仍优先推荐；Higgsfield CLI 和即梦 CLI 也是当前已支持路径，而不是未来才可能适配的选项。
+
+目前的工作流主要针对由多个 15 秒片段组成的 1–5 分钟视频。Cinematic Drama 的正式片段固定使用 Seedance 2.0 Pro、720p，不主动尝试 Seedance 2.5 Pro 或升级 1080p。
+
+想了解完整执行规则，可以阅读 [SKILL.md](./SKILL.md)。旁白、视频 Prompt、音色参考与封面制作方法分别收录在 [`references/`](./references/) 中。
+
+## 许可证
+
+本仓库的原创内容采用 [MIT License](./LICENSE) 开源。第三方文档和外部链接内容仍遵循各自权利人的许可条款。
+
+<p align="center">
+  <strong>如果你也想和 Agent 一起导演出更好的视频，欢迎试用、分享，并为这个项目点一个 Star。</strong>
+</p>
